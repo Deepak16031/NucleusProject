@@ -50,6 +50,9 @@ public class LoanApplications {
     @Column(name = "authorized_by", nullable = false, length = 30)
     private String authorizedBy;
 
+    @Column(name = "status", nullable = false, length = 10)
+    private String status;
+
     public Integer getLoanApplicationNumber() {
         return loanApplicationNumber;
     }
